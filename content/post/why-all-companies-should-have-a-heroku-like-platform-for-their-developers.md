@@ -350,9 +350,3 @@ living in :)
 *I will be speaking at [prdcdeliver](http://www.prdcdeliver.com/) 2017 about
 “How can you harness the power of entrepreneurs in your company? Give them a
 PaaS!”. Hopefully share some more content after the conference.*
-
-* [Docker](https://medium.com/tag/docker?source=post)
-* [Kubernetes](https://medium.com/tag/kubernetes?source=post)
-* [Paas](https://medium.com/tag/paas?source=post)
-* [Deis](https://medium.com/tag/deis?source=post)
-* [Helm](https://medium.com/tag/helm?source=post)
