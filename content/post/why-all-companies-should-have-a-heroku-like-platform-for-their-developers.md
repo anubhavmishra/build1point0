@@ -155,7 +155,9 @@ use helm to install Deis Workflow:
 
 * Install Helm
 
+```bash
 brew install kubernetes-helm
+```
 
 * Initialize Helm and Install Tiller
 
