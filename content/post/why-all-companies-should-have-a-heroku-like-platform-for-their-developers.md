@@ -123,13 +123,13 @@ launching a Kubernetes cluster on AWS. After you are done you should have couple
 of nodes running Kubernetes:
 
 ```bash
-    kubectl get nodes
-    NAME                            STATUS         AGE       VERSION
-    ip-10-0-0-1.ec2.internal        Ready          17h       v1.6.2
-    ip-10-0-0-2.ec2.internal        Ready,master   17h       v1.6.2
-    ip-10-0-0-3.ec2.internal        Ready,master   17h       v1.6.2
-    ip-10-0-0-4.ec2.internal        Ready,master   17h       v1.6.2
-    ip-10-0-0-5.ec2.internal        Ready          17h       v1.6.2
+kubectl get nodes
+NAME                            STATUS         AGE       VERSION
+ip-10-0-0-1.ec2.internal        Ready          17h       v1.6.2
+ip-10-0-0-2.ec2.internal        Ready,master   17h       v1.6.2
+ip-10-0-0-3.ec2.internal        Ready,master   17h       v1.6.2
+ip-10-0-0-4.ec2.internal        Ready,master   17h       v1.6.2
+ip-10-0-0-5.ec2.internal        Ready          17h       v1.6.2
 ```
 
 #### **Install Deis Workflow on top of Kubernetes**
@@ -198,27 +198,27 @@ enable SSL on Workflow.
 Now we have Deis Workflow running on top of our Kubernetes cluster!
 
 ```bash
-    kubectl get pods --namespace=deis
-    NAME                                    READY     STATUS    RESTARTS   AGE
-    deis-builder-3768201740-clk0p           1/1       Running   0          38d
-    deis-controller-4279484688-zhxsk        1/1       Running   1          9d
-    deis-database-4238932065-v0rg0          1/1       Running   1          38d
-    deis-logger-2533678197-jd05z            1/1       Running   1          38d
-    ...
+kubectl get pods --namespace=deis
+NAME                                    READY     STATUS    RESTARTS   AGE
+deis-builder-3768201740-clk0p           1/1       Running   0          38d
+deis-controller-4279484688-zhxsk        1/1       Running   1          9d
+deis-database-4238932065-v0rg0          1/1       Running   1          38d
+deis-logger-2533678197-jd05z            1/1       Running   1          38d
+...
 ```
 
 Let’s now install Deis CLI:
 
 ```bash
-    curl -sSL http://deis.io/deis-cli/install-v2.sh | bash
-    sudo mv $PWD/deis /usr/local/bin/deis
+curl -sSL http://deis.io/deis-cli/install-v2.sh | bash
+sudo mv $PWD/deis /usr/local/bin/deis
 ```
 
 Test Deis CLI:
 
 ```bash
-    deis version 
-    v2.15.0
+deis version 
+v2.15.0
 ```
 
 Now just follow the
@@ -255,44 +255,44 @@ Argghhhh its just a hackathon app!!!!
 Login to Deis:
 
 ```bash
-    deis login 
-    Logged in as developer
-    Configuration file written to /Users/awesome-user/.deis/client.json
+deis login 
+Logged in as developer
+Configuration file written to /Users/awesome-user/.deis/client.json
 ```
 
 Go to the application folder that needs to be deployed:
 
 ```bash
-    deis create hackathon-ruby-app
-    Creating Application... done, created hackathon-ruby-app
-    Git remote deis successfully created for app hackathon-ruby-app.
+deis create hackathon-ruby-app
+Creating Application... done, created hackathon-ruby-app
+Git remote deis successfully created for app hackathon-ruby-app.
 ```
 
 Push to Deis remote (*the best part of this process*):
 
 ```bash
-    git push deis master
-    Counting objects: 239, done.
-    Delta compression using up to 4 threads.
-    Compressing objects: 100% (172/172), done.
-    Writing objects: 100% (239/239), 375.14 KiB | 0 bytes/s, done.
-    Total 239 (delta 57), reused 239 (delta 57)
-    remote: Resolving deltas: 100% (57/57), done.
-    Starting build... but first, coffee!
-    -----> Restoring cache...
-           No cache file found. If this is the first deploy, it will be created now.
-    -----> Ruby app detected
-    -----> Bootstrapping...
-    -----> Installing platform packages...
-    ....
-    Build complete.
-    Launching App...
+git push deis master
+Counting objects: 239, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (172/172), done.
+Writing objects: 100% (239/239), 375.14 KiB | 0 bytes/s, done.
+Total 239 (delta 57), reused 239 (delta 57)
+remote: Resolving deltas: 100% (57/57), done.
+Starting build... but first, coffee!
+-----> Restoring cache...
+       No cache file found. If this is the first deploy, it will be created now.
+-----> Ruby app detected
+-----> Bootstrapping...
+-----> Installing platform packages...
+....
+Build complete.
+Launching App...
 ```
 
 Open application on the browser:
 
 ```bash
-    deis open
+deis open
 ```
 
 The application will be available at:
