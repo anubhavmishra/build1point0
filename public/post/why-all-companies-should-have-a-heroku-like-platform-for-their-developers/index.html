@@ -52,7 +52,7 @@ In this blog post we will explore how and why at Hootsuite we created a simple P
 
 <meta itemprop="datePublished" content="2017-08-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-08-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1977">
+<meta itemprop="wordCount" content="1978">
 
 
 
@@ -225,13 +225,13 @@ a Kubernetes cluster up in AWS. You can use the
 launching a Kubernetes cluster on AWS. After you are done you should have couple
 of nodes running Kubernetes:</p>
 
-<pre><code>kubectl get nodes
-NAME                            STATUS         AGE       VERSION
-ip-10-0-0-1.ec2.internal        Ready          17h       v1.6.2
-ip-10-0-0-2.ec2.internal        Ready,master   17h       v1.6.2
-ip-10-0-0-3.ec2.internal        Ready,master   17h       v1.6.2
-ip-10-0-0-4.ec2.internal        Ready,master   17h       v1.6.2
-ip-10-0-0-5.ec2.internal        Ready          17h       v1.6.2
+<pre><code class="language-bash">    kubectl get nodes
+    NAME                            STATUS         AGE       VERSION
+    ip-10-0-0-1.ec2.internal        Ready          17h       v1.6.2
+    ip-10-0-0-2.ec2.internal        Ready,master   17h       v1.6.2
+    ip-10-0-0-3.ec2.internal        Ready,master   17h       v1.6.2
+    ip-10-0-0-4.ec2.internal        Ready,master   17h       v1.6.2
+    ip-10-0-0-5.ec2.internal        Ready          17h       v1.6.2
 </code></pre>
 
 <h4 id="install-deis-workflow-on-top-of-kubernetes"><strong>Install Deis Workflow on top of Kubernetes</strong></h4>
@@ -248,35 +248,39 @@ analogy that makes a lot of sense for systems like Kubernetes. Now you might be
 wondering where I am going with this? Well we need to install things on this
 huge computer. How do we do that? If you were to install lets say
 <a href="http://hisham.hm/htop/">htop</a> on your mac how would you do it? You can use
-something like <a href="https://brew.sh/">brew</a> and open your terminal and type<code>brew
+something like <a href="https://brew.sh/">brew</a> and open your terminal and type <code>brew
 install htop</code>. Now imagine if there was something like brew for Kubernetes. Well
-there is…. and it is called <a href="https://github.com/kubernetes/helm">helm</a> —
+there is&hellip;.. and it is called <a href="https://github.com/kubernetes/helm">helm</a> —
 Kubernetes Package Manager. Helm is created by a company called
 <a href="https://deis.com/">Deis</a> and yes they also created Deis Workflow. Here we will
 use helm to install Deis Workflow:</p>
 
 <ul>
-<li><p>Install Helm</p>
-
-<p>brew install kubernetes-helm</p></li>
-
-<li><p>Initialize Helm and Install Tiller</p>
-
-<p>helm init</p></li>
+<li>Install Helm</li>
 </ul>
+
+<p>brew install kubernetes-helm</p>
+
+<ul>
+<li>Initialize Helm and Install Tiller</li>
+</ul>
+
+<pre><code class="language-bash">helm init
+</code></pre>
 
 <p>This will install <code>tiller</code> that is the server side component for Helm that
 manages and orchestrates releases in Kubernetes.</p>
 
 <ul>
-<li><p>Install Deis Workflow</p>
-
-<p>helm repo add deis <a href="https://charts.deis.com/workflow">https://charts.deis.com/workflow</a></p></li>
+<li>Install Deis Workflow</li>
 </ul>
+
+<pre><code class="language-bash">helm repo add deis https://charts.deis.com/workflow
+</code></pre>
 
 <p>This will add the Deis chart repo to your helm chart repos.</p>
 
-<pre><code>helm install deis/workflow --namespace deis
+<pre><code class="language-bash">helm install deis/workflow --namespace deis
 </code></pre>
 
 <p>This will install Deis Workflow. Yes! it is a single command. The helm chart for
@@ -300,25 +304,25 @@ enable SSL on Workflow.</li>
 
 <p>Now we have Deis Workflow running on top of our Kubernetes cluster!</p>
 
-<pre><code>kubectl get pods --namespace=deis
-NAME                                    READY     STATUS    RESTARTS   AGE
-deis-builder-3768201740-clk0p           1/1       Running   0          38d
-deis-controller-4279484688-zhxsk        1/1       Running   1          9d
-deis-database-4238932065-v0rg0          1/1       Running   1          38d
-deis-logger-2533678197-jd05z            1/1       Running   1          38d
-...
+<pre><code class="language-bash">    kubectl get pods --namespace=deis
+    NAME                                    READY     STATUS    RESTARTS   AGE
+    deis-builder-3768201740-clk0p           1/1       Running   0          38d
+    deis-controller-4279484688-zhxsk        1/1       Running   1          9d
+    deis-database-4238932065-v0rg0          1/1       Running   1          38d
+    deis-logger-2533678197-jd05z            1/1       Running   1          38d
+    ...
 </code></pre>
 
 <p>Let’s now install Deis CLI:</p>
 
-<pre><code>curl -sSL http://deis.io/deis-cli/install-v2.sh | bash
-sudo mv $PWD/deis /usr/local/bin/deis
+<pre><code class="language-bash">    curl -sSL http://deis.io/deis-cli/install-v2.sh | bash
+    sudo mv $PWD/deis /usr/local/bin/deis
 </code></pre>
 
 <p>Test Deis CLI:</p>
 
-<pre><code>deis version 
-v2.15.0
+<pre><code class="language-bash">    deis version 
+    v2.15.0
 </code></pre>
 
 <p>Now just follow the
@@ -362,41 +366,41 @@ cake.</p>
 
 <p>Login to Deis:</p>
 
-<pre><code>deis login 
-Logged in as developer
-Configuration file written to /Users/awesome-user/.deis/client.json
+<pre><code class="language-bash">    deis login 
+    Logged in as developer
+    Configuration file written to /Users/awesome-user/.deis/client.json
 </code></pre>
 
 <p>Go to the application folder that needs to be deployed:</p>
 
-<pre><code>deis create hackathon-ruby-app
-Creating Application... done, created hackathon-ruby-app
-Git remote deis successfully created for app hackathon-ruby-app.
+<pre><code class="language-bash">    deis create hackathon-ruby-app
+    Creating Application... done, created hackathon-ruby-app
+    Git remote deis successfully created for app hackathon-ruby-app.
 </code></pre>
 
 <p>Push to Deis remote (<em>the best part of this process</em>):</p>
 
-<pre><code>git push deis master
-Counting objects: 239, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (172/172), done.
-Writing objects: 100% (239/239), 375.14 KiB | 0 bytes/s, done.
-Total 239 (delta 57), reused 239 (delta 57)
-remote: Resolving deltas: 100% (57/57), done.
-Starting build... but first, coffee!
------&gt; Restoring cache...
-       No cache file found. If this is the first deploy, it will be created now.
------&gt; Ruby app detected
------&gt; Bootstrapping...
------&gt; Installing platform packages...
-....
-Build complete.
-Launching App...
+<pre><code class="language-bash">    git push deis master
+    Counting objects: 239, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (172/172), done.
+    Writing objects: 100% (239/239), 375.14 KiB | 0 bytes/s, done.
+    Total 239 (delta 57), reused 239 (delta 57)
+    remote: Resolving deltas: 100% (57/57), done.
+    Starting build... but first, coffee!
+    -----&gt; Restoring cache...
+           No cache file found. If this is the first deploy, it will be created now.
+    -----&gt; Ruby app detected
+    -----&gt; Bootstrapping...
+    -----&gt; Installing platform packages...
+    ....
+    Build complete.
+    Launching App...
 </code></pre>
 
 <p>Open application on the browser:</p>
 
-<pre><code>deis open
+<pre><code class="language-bash">    deis open
 </code></pre>
 
 <p>The application will be available at:</p>
@@ -455,9 +459,9 @@ companies specially the ones that encourage developers or engineers to
 experiment and fail. So, lets not sit back but enjoy this time that we are
 living in :)</p>
 
-<p>*I will be speaking at <em><a href="http://www.prdcdeliver.com/">prdcdeliver</a></em> 2017 about
+<p><em>I will be speaking at <a href="http://www.prdcdeliver.com/">prdcdeliver</a> 2017 about
 “How can you harness the power of entrepreneurs in your company? Give them a
-PaaS!”. Hopefully share some more content after the conference.*</p>
+PaaS!”. Hopefully share some more content after the conference.</em></p>
 
 <ul>
 <li><a href="https://medium.com/tag/docker?source=post">Docker</a></li>

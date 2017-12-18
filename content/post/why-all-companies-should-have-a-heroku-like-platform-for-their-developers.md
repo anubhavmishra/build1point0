@@ -122,6 +122,7 @@ a Kubernetes cluster up in AWS. You can use the
 launching a Kubernetes cluster on AWS. After you are done you should have couple
 of nodes running Kubernetes:
 
+```bash
     kubectl get nodes
     NAME                            STATUS         AGE       VERSION
     ip-10-0-0-1.ec2.internal        Ready          17h       v1.6.2
@@ -129,6 +130,7 @@ of nodes running Kubernetes:
     ip-10-0-0-3.ec2.internal        Ready,master   17h       v1.6.2
     ip-10-0-0-4.ec2.internal        Ready,master   17h       v1.6.2
     ip-10-0-0-5.ec2.internal        Ready          17h       v1.6.2
+```
 
 #### **Install Deis Workflow on top of Kubernetes**
 
@@ -144,31 +146,37 @@ analogy that makes a lot of sense for systems like Kubernetes. Now you might be
 wondering where I am going with this? Well we need to install things on this
 huge computer. How do we do that? If you were to install lets say
 [htop](http://hisham.hm/htop/) on your mac how would you do it? You can use
-something like [brew](https://brew.sh/) and open your terminal and type`brew
+something like [brew](https://brew.sh/) and open your terminal and type `brew
 install htop`. Now imagine if there was something like brew for Kubernetes. Well
-there is…. and it is called [helm](https://github.com/kubernetes/helm) —
+there is..... and it is called [helm](https://github.com/kubernetes/helm) —
 Kubernetes Package Manager. Helm is created by a company called
 [Deis](https://deis.com/) and yes they also created Deis Workflow. Here we will
 use helm to install Deis Workflow:
 
 * Install Helm
 
-    brew install kubernetes-helm
+brew install kubernetes-helm
 
 * Initialize Helm and Install Tiller
 
-    helm init
+```bash
+helm init
+```
 
 This will install `tiller` that is the server side component for Helm that
 manages and orchestrates releases in Kubernetes.
 
 * Install Deis Workflow
 
-    helm repo add deis https://charts.deis.com/workflow
+```bash
+helm repo add deis https://charts.deis.com/workflow
+```
 
 This will add the Deis chart repo to your helm chart repos.
 
-    helm install deis/workflow --namespace deis
+```bash
+helm install deis/workflow --namespace deis
+```
 
 This will install Deis Workflow. Yes! it is a single command. The helm chart for
 Deis Workflow has all the necessary Kubernetes manifests that are required to
@@ -189,6 +197,7 @@ enable SSL on Workflow.
 
 Now we have Deis Workflow running on top of our Kubernetes cluster!
 
+```bash
     kubectl get pods --namespace=deis
     NAME                                    READY     STATUS    RESTARTS   AGE
     deis-builder-3768201740-clk0p           1/1       Running   0          38d
@@ -196,16 +205,21 @@ Now we have Deis Workflow running on top of our Kubernetes cluster!
     deis-database-4238932065-v0rg0          1/1       Running   1          38d
     deis-logger-2533678197-jd05z            1/1       Running   1          38d
     ...
+```
 
 Let’s now install Deis CLI:
 
+```bash
     curl -sSL http://deis.io/deis-cli/install-v2.sh | bash
     sudo mv $PWD/deis /usr/local/bin/deis
+```
 
 Test Deis CLI:
 
+```bash
     deis version 
     v2.15.0
+```
 
 Now just follow the
 [guide](https://deis.com/docs/workflow/quickstart/deploy-an-app/) to deploy your
@@ -240,18 +254,23 @@ Argghhhh its just a hackathon app!!!!
 
 Login to Deis:
 
+```bash
     deis login 
     Logged in as developer
     Configuration file written to /Users/awesome-user/.deis/client.json
+```
 
 Go to the application folder that needs to be deployed:
 
+```bash
     deis create hackathon-ruby-app
     Creating Application... done, created hackathon-ruby-app
     Git remote deis successfully created for app hackathon-ruby-app.
+```
 
 Push to Deis remote (*the best part of this process*):
 
+```bash
     git push deis master
     Counting objects: 239, done.
     Delta compression using up to 4 threads.
@@ -268,10 +287,13 @@ Push to Deis remote (*the best part of this process*):
     ....
     Build complete.
     Launching App...
+```
 
 Open application on the browser:
 
+```bash
     deis open
+```
 
 The application will be available at:
 
@@ -325,7 +347,7 @@ companies specially the ones that encourage developers or engineers to
 experiment and fail. So, lets not sit back but enjoy this time that we are
 living in :)
 
-*I will be speaking at *[prdcdeliver](http://www.prdcdeliver.com/)* 2017 about
+*I will be speaking at [prdcdeliver](http://www.prdcdeliver.com/) 2017 about
 “How can you harness the power of entrepreneurs in your company? Give them a
 PaaS!”. Hopefully share some more content after the conference.*
 
