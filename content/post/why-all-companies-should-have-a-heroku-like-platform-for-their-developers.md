@@ -11,8 +11,6 @@ tags = [
 date = "2017-08-04"
 +++
 
-# Why all companies should have a Heroku-like platform for their developers
-
 At Hootsuite, we try to host internal hackathons pretty frequently. Like any
 other hackathon, people come together, write some code and build something
 awesome. But often we noticed that these hacks tend on taking longer than
