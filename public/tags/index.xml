@@ -12,38 +12,47 @@
     
     
     <item>
-      <title>Development</title>
-      <link>https://build1point0.com/tags/development/</link>
+      <title>Deis</title>
+      <link>https://build1point0.com/tags/deis/</link>
       <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://build1point0.com/tags/development/</guid>
+      <guid>https://build1point0.com/tags/deis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://build1point0.com/tags/go/</link>
+      <title>Docker</title>
+      <link>https://build1point0.com/tags/docker/</link>
       <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://build1point0.com/tags/go/</guid>
+      <guid>https://build1point0.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://build1point0.com/tags/golang/</link>
+      <title>Helm</title>
+      <link>https://build1point0.com/tags/helm/</link>
       <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://build1point0.com/tags/golang/</guid>
+      <guid>https://build1point0.com/tags/helm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://build1point0.com/tags/hugo/</link>
+      <title>Kubernetes</title>
+      <link>https://build1point0.com/tags/kubernetes/</link>
       <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://build1point0.com/tags/hugo/</guid>
+      <guid>https://build1point0.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paas</title>
+      <link>https://build1point0.com/tags/paas/</link>
+      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://build1point0.com/tags/paas/</guid>
       <description></description>
     </item>
     

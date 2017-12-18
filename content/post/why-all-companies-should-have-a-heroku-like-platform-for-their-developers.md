@@ -2,19 +2,13 @@
 title = "Why all companies should have a Heroku-like platform for their developers"
 description = ""
 tags = [
-    "go",
-    "golang",
-    "hugo",
-    "development",
-]
-date = "2017-08-04"
-categories = [
     "Docker", 
     "Kubernetes", 
     "Paas", 
     "Deis", 
     "Helm",
 ]
+date = "2017-08-04"
 +++
 
 # Why all companies should have a Heroku-like platform for their developers

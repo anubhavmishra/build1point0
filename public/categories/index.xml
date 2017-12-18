@@ -10,50 +10,5 @@
 	<atom:link href="https://build1point0.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Deis</title>
-      <link>https://build1point0.com/categories/deis/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://build1point0.com/categories/deis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://build1point0.com/categories/docker/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://build1point0.com/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Helm</title>
-      <link>https://build1point0.com/categories/helm/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://build1point0.com/categories/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://build1point0.com/categories/kubernetes/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://build1point0.com/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Paas</title>
-      <link>https://build1point0.com/categories/paas/</link>
-      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://build1point0.com/categories/paas/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

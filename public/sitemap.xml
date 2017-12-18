@@ -18,55 +18,31 @@
   </url>
   
   <url>
-    <loc>https://build1point0.com/categories/deis/</loc>
+    <loc>https://build1point0.com/tags/deis/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://build1point0.com/tags/development/</loc>
+    <loc>https://build1point0.com/tags/docker/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://build1point0.com/categories/docker/</loc>
+    <loc>https://build1point0.com/tags/helm/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://build1point0.com/tags/go/</loc>
+    <loc>https://build1point0.com/tags/kubernetes/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://build1point0.com/tags/golang/</loc>
-    <lastmod>2017-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://build1point0.com/categories/helm/</loc>
-    <lastmod>2017-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://build1point0.com/tags/hugo/</loc>
-    <lastmod>2017-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://build1point0.com/categories/kubernetes/</loc>
-    <lastmod>2017-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://build1point0.com/categories/paas/</loc>
+    <loc>https://build1point0.com/tags/paas/</loc>
     <lastmod>2017-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
