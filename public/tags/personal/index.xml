@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on build1point0</title>
+    <link>https://build1point0.com/tags/personal/</link>
+    <description>Recent content in Personal on build1point0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://build1point0.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I am joining HashiCorp</title>
+      <link>https://build1point0.com/post/iam-joining-hashicorp/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://build1point0.com/post/iam-joining-hashicorp/</guid>
+      <description>Artwork by Ashley McNamara
+I remember the first time I used Vagrant…. I ran vagrant up and my developer environment was up and running in minutes!
+That feeling of using a piece of software and it doing exactly want you expected it to, does leave an impression on you. I never imagined that I would end up working for a company that creates software that makes people smile everyday. I am super happy to announce that I am joining HashiCorp as a Developer Advocate.</description>
+    </item>
+    
+  </channel>
+</rss>
