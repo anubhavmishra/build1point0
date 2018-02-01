@@ -15,12 +15,12 @@ I remember the first time I used [Vagrant](https://www.vagrantup.com/)…. I ran
 
 That feeling of using a piece of software and it doing exactly want you expected
 it to, does leave an impression on you. I never imagined that I would end up
-working for a company that creates software that makes people smile everyday. I
+working for a company that creates software that makes people smile every day. I
 am super happy to announce that I am joining HashiCorp as a Developer Advocate.
 I would like to share my thoughts on the whole experience.
 
 I have worked for [Hootsuite](https://www.hootsuite.com/) for almost four years.
-Yes, that is really long time in “tech” years nowadays. Over those years I saw
+Yes, that is a really long time in “tech” years nowadays. Over those years I saw
 the company transform from a startup to *almost* a mature enterprise. We all
 know the technical and people challenges that come with such a transformation.
 Interestingly enough, HashiCorp tools have helped us every step of the way. They
@@ -97,7 +97,7 @@ them were giant enterprises. But these conversations didn’t satisfy me. The
 advocate roles weren’t really what I thought advocating should be. A Developer
 Advocate enables developers to do what they really love which is to code and to
 build amazing things. It’s about getting people interested and excited about
-technology and what they do everyday. It’s about sharing ideas freely and your
+technology and what they do every day. It’s about sharing ideas freely and your
 own unique way. I didn’t feel these companies looked it that way.
 
 I come from a family of educators. My mom and dad were both professors at
@@ -114,17 +114,17 @@ and said that there was a head count open for a developer advocate! I then went
 on to interview with HashiCorp. *The company I always looked up to*. The
 interview process consisted of interviews with [Armon
 Dadgar](https://medium.com/@armon) (CTO and CoFounder), Jay Fry (Head of
-Marketing), [Nic Jackson](https://medium.com/@nicjackson) (Developer Advocate)
+Marketing), [Nic Jackson](https://medium.com/@nicjackson) (Developer Advocate),
 and finally [Seth Vargo](https://medium.com/@sethvargo) (Director of Technical
 Advocacy). The more I talked to them, the more I felt how welcoming everyone
 was. I realized that each and everyone at HashiCorp is so focused on application
 delivery and meeting customers where they are. They understand both sides of the
 story; **people** and **technology**. Not to mention that they do have six
 successful open source projects to show for it (*Terraform, Vault, Consul,
-Vagrant, Packer and Nomad)*. If you have used any one of these tools, you know
+Vagrant, Packer, and Nomad)*. If you have used any one of these tools, you know
 that they were built for humans. Each tool at its core follows the principles
 laid out in the [Tao of
-HashiCorp](https://www.hashicorp.com/blog/the-tao-of-hashicorp). My favourite
+HashiCorp](https://www.hashicorp.com/blog/the-tao-of-hashicorp). My favorite
 one is “Pragmatism” that aligns with my approach towards engineering and
 technology.
 
@@ -136,7 +136,7 @@ Advocacy really important.
 
 Now you might be thinking what went wrong at Hootsuite? The answer is
 **nothing**! [Anyone reading this would be lucky to join
-Hootsuite](https://hootsuite.com/about/careers). I have learnt so much from the
+Hootsuite](https://hootsuite.com/about/careers). I have learned so much from the
 people there. The good thing is that I get to stay in Vancouver, BC and keep in
 touch with all my friends from Hootsuite. I also organize the [HashiCorp User
 Group](https://www.meetup.com/Vancouver-HashiCorp-User-Group/) in Vancouver that
@@ -145,6 +145,6 @@ and ecosystem in Vancouver, BC.
 
 I am excited for my next adventure at HashiCorp where I get to collaborate with
 amazing people like [Armon](https://medium.com/@armon),
-[Seth](https://medium.com/@sethvargo) and
+[Seth](https://medium.com/@sethvargo), and
 [Nic](https://medium.com/@sheriffjackson). I can’t wait to meet all you
 HashiCorp users and help you in anyway I can!
