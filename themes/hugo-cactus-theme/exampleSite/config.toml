@@ -1,20 +1,20 @@
 # Site settings
-baseurl = "https://build1point0.com/"
-themesDir = "themes/"
+baseurl = "https://example.org/"
+themesDir = "../.."
 languageCode = "en-us"
-title = "build1point0"
+title = "Hugo Cactus Theme"
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
-disqusShortname = "build1point0"
+disqusShortname = "spf13"
 
 [params]
-	name = "build1point0"
-	description = "Its about time I had a blog...."
-	bio = ""
+	name = "John Doe"
+	description = "Describe your website"
+	bio = "Blogger & Programmer"
 	# Enter optionally your twitter account
-	twitter = "anubhavm"
+	twitter = "Your Twitter account"
 	enableRSS = true
 
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
@@ -34,7 +34,7 @@ disqusShortname = "build1point0"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = ""
+	aboutAuthor = "I'm an blogger."
 	tweet = ""
 	share = ""
 	# 404 page
@@ -48,5 +48,7 @@ disqusShortname = "build1point0"
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/anubhavm"
-    github   = "https://www.github.com/anubhavmishra"
+    twitter  = "https://www.twitter.com/"
+    facebook = "https://www.facebook.com/"
+    github   = "https://www.github.com/"
+    dribble  = "https://www.dribbble.com/"
