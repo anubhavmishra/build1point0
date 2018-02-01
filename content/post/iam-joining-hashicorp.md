@@ -104,7 +104,7 @@ I come from a family of educators. My mom and dad were both professors at
 universities in India. My mom continues to lead the education movement in India.
 I saw my parents educate so many people and it taught me that the reward you get
 after teaching people to do a little bit better in life is priceless. This is
-the core value that is engrained in me and I would be happy to carry that torch
+the core value that is ingrained in me and I would be happy to carry that torch
 forward in the tech community.
 
 After creating a list of companies that aligned with my core values, HashiCorp
