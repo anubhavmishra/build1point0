@@ -14,7 +14,7 @@ disqusShortname = "build1point0"
 	description = "Its about time I had a blog...."
 	bio = ""
 	# Enter optionally your twitter account
-	twitter = "anubhavm"
+	twitter = "build1point0"
 	enableRSS = true
 
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
@@ -48,5 +48,5 @@ disqusShortname = "build1point0"
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/anubhavm"
+    twitter  = "https://www.twitter.com/build1point0"
     github   = "https://www.github.com/anubhavmishra"
