@@ -5,7 +5,7 @@ languageCode = "en-us"
 title = "build1point0"
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-148064331-1"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "build1point0"
 
